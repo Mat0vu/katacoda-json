@@ -47,7 +47,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "code": "env-init.sh",
+	  "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
