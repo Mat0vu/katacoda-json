@@ -1,4 +1,3 @@
-# Was ist JSON?
-JSON steht für Java Script Object Notation und ist ein Format zu Datenspeicherung. Das Format basiert auf den Datentypen der Programmiersprache JavaScript, die im Namen enthalten ist. Aufgrund der Tatsache, dass JSON sowohl von Maschinen als auch Menschen gut verstanden werden kann, ist JSON in der heutigen Zeit weit verbreitet. Insbesondere in der Web-Entwicklung wird JSON oft eingesetzt, um Informationen über das Internet auszutauschen. (Felipe Pezoa)
-Doch auch bei der Datenspeicherung wird das flexible JSON-Format eingesetzt. Während NoSQL Datenbanken wie beispielsweise Dokumentenorientierte Datenbanken JSON direkt unterstützen und damit von dem flexiblen und an die objektorientierte Programmierung angepasstes Model profitieren, speichern relationale Datenbanken die Daten in vordefinierten Strukturen ab (Craug Chasseur).
-Viele moderne relationale Datenbankmanagementsysteme wie beispielsweise PostgreSQL unterstützen mittlerweile aber auch JSON seit Version 9.2. In Version 9.3 wurde die Funktionsweise nochmal weiterentwickelt. (Petkovic) 
+# JSON in relationalen Datenbanken
+JSON ist ein weitverbreites Format für die Speicherung von Daten. 
+Dieses Tutorial zeigt die Grundlagen für die Verwendung von JSON in relationalen Datenbanken am Beispiel von PostgreSQL.
