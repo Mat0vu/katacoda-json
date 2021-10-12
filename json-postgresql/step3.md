@@ -1,15 +1,16 @@
-# Basics: Anlegen der Tabelle
-Zuerst melden wir uns mit dem Standarduser `postgres` an dem Datenbankserver PostgreSQL an.
+# Grundlegende Einrichtung
+Nach diesem theoretischen Start wird jetzt an einigen Beispielen die Verwendung von JSON in PostgreSQL demonstriert. 
 
+Zuerst melden wir uns mit dem Standarduser `postgres` an dem Datenbankserver PostgreSQL an.
 `psql -U postgres`{{execute T1}}
 
-# Beispiel
-An Beispielen wird nun die Speicherung und Abfrage von JSON Daten in PostgreSQL demonstriert.
-Ein Restaurant möchte in einer Datenbank verschiedene Gerichte mit den zugehörigen Zutaten und deren Mengenangaben abspeichern. 
-Da die Rezepte unterschiedliche Anzahlen an Zutaten und unterschiedliche Maßeinheiten haben, wäre es nicht möglich, dieses in einem Schema im Voraus festzulegen.
-Hier kann die Verwendung von dem Datentyp *jsonb* helfen.
+# Einleitung: Beispiel
+Ein Restaurant möchte in einer Datenbank verschiedene Gerichte mit den zugehörigen Zutaten und deren Mengenangaben abspeichern. Da die verschiedenen Rezepte unterschiedliche Anzahlen an Zutaten und diese auch unterschiedliche Mengen- und Maßeinheiten haben, wäre es sehr umständlich, dies in einem Schema im Voraus festzulegen.
+Deshalb ist die Verwendung vom Datentyp *jsonb* hier sinnvoll.
 
 ## Tabelle erstellen
+Zuerst wird die Tabelle für die Rezepte erstellt.
+Diese enthält die Spalten *id*, *name*, *preis* und schließlich weitere *infos*, die im Typ *jsonb* abgespeichert werden.
 ```
 CREATE TABLE IF NOT EXISTS Rezepte (id INTEGER, 
 name VARCHAR(255) NOT NULL,
