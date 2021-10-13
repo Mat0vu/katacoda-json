@@ -1,4 +1,3 @@
-# JSON in PostgreSQL
 In PostgreSQL stehen zwei verschiedene Datentypen zur Verfügung, um Daten im JSON-Format zu speichern.
 
 ## JSON

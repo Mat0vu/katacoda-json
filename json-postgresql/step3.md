@@ -1,4 +1,3 @@
-# Grundlegende Einrichtung
 Nach diesem theoretischen Start wird jetzt an einigen Beispielen die Verwendung von JSON in PostgreSQL demonstriert. 
 
 Zuerst melden wir uns mit dem Standarduser `postgres` an dem Datenbankserver PostgreSQL an.

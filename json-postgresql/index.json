@@ -6,44 +6,28 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "JSON",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "JSON in PostgreSQL",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Einrichtung",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Einfügen von Daten",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Daten Abfragen",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Veröffentlichen von Daten",
         "text": "step6.md"
-      },
-      {
-        "title": "Step 7",
-        "text": "step7.md"
-      },
-      {
-        "title": "Step 8",
-        "text": "step8.md"
-      },
-      {
-        "title": "Step 9",
-        "text": "step9.md"
-      },
-      {
-        "title": "Step 10",
-        "text": "step10.md"
       }
     ],
     "intro": {

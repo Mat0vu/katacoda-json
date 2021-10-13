@@ -1,4 +1,3 @@
-# Was ist JSON?
 JSON steht für *Java Script Object Notation* und ist ein flexibles und programmiersprachenunabhängiges Format zur Speicherung von Daten. Aufgrund der Tatsache, dass JSON sowohl von Maschinen als auch Menschen gut verstanden werden kann, ist JSON in der heutigen Zeit weit verbreitet. Insbesondere in der Web-Entwicklung wird JSON oft eingesetzt, um Informationen über das Internet auszutauschen [1].
 
 # Struktur
@@ -15,12 +14,12 @@ An einem Beispiel soll die Struktur eines JSON-Objekts erklärt werden.
   }
 }
 ```
-*mitarbeiter* ist ein Objekt. *vorname* und *nachname* sind beides Eigenschaften, die wiederumm immer aus Schlüsseln (Keys)und einem zugehörigen  Wert (Value) bestehen. <br>
+*mitarbeiter* ist ein Objekt. *vorname* und *nachname* sind beides Eigenschaften, die wiederum immer aus Schlüsseln (Keys)und einem zugehörigen  Wert (Value) bestehen. <br>
 *qualifikationen* ist ein Array, in dem mehrere Werte, oder auch wieder verschachtelte Objekte abgelegt werden können [1].
 
 
 # Nutzen
-Warum möchte man Daten in relationalen Datenbanken im JSON-Format speichern?
+Warum möchte man Daten in relationalen Datenbanken überhaupt im JSON-Format speichern?
 
 In relationalen Datenbankmanagementsystemen muss vor der Speicherung von Daten das Datenbankschema vorgegeben werden. Damit wird festgelegt, wie viele Spalten in den Tabellen zur Verfügung stehen sollen und welche Datentypen darin gespeichert werden.
 Dieses traditionelle Konzepz der relationen DBMS, das in den letzten 25 Jahren sehr weit verbreitet war, ist heutzutage nicht mehr für alle Anforderungen sinnvoll, weshalb immer mehr andere DBMS eingesetzt werden [2].

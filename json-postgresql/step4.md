@@ -1,4 +1,3 @@
-# Einfügen von Daten
 Nun werden zwei Einträge eingefügt: Einen **Teig** und eine **Soße**.
 
 Beide enthalten in der *infos* Spalte weitere Daten im *jsonb* Format, die den Eintrag flexibel um weitere Informationen erweitert.
@@ -74,10 +73,3 @@ update rezepte
 set infos = jsonb_insert(infos, '{kommentare, 0}', '"sehr lecker"')
 where id=1;
 ```{{execute T1}}
-
-## Abfragen
-Sehen wir uns nun den Eintrag mit dem neuen Kommentar an:
-```
-SELECT infos->'zutaten' as Zutaten FROM Rezepte;
-```{{execute T1}}
-Es wurde ein neuer Eintrag im *kommentare*-Array mit dem gewünschten Kommentar hinzugefügt. In diesem Befehl wurde ein Operator verwendet, der für die Arbeit mit JSON-Objekten sehr wichtig ist. Die zur Verfügung stehenden Operatoren werden im folgenden näher erläutert.
