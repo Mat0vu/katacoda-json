@@ -33,7 +33,7 @@ SELECT name, infos#>'{zutaten,0}' as hauptzutat
 FROM Rezepte;
 ```{{execute T1}}
 
-Mit dem `@>` Operator kann geschaut werden, ob ein Element enthalten ist.
+Mit dem `@>` Operator kann überprüft werden, ob ein Element enthalten ist.
 Mit dieser Abfrage werden alle Rezepte angezeigt, die Eier enthalten.
 ```
 SELECT id, name 

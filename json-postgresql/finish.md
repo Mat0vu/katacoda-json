@@ -1,7 +1,7 @@
 Dieses Tutorial zeigte die Grundlagen von JSON und dessen Verwendung in relationalen Datenbanken am Beispiel von PostgreSQL. 
-Aufgrund des Umfangs wurde nicht auf das Erstellen von Indexen eingegangen. Diese können sowohl über die ganze Spalte vom Typ JSON erstellt werden, als auch über ein bestimmtes Element innerhalb des JSON. Dies kann sinnvoll sein, wenn beispielsweise innerhalb des JSONs oft nach einem bestimmten Attribut gefiltert wird. Dies wird in [7] näher beschrieben.
+Aufgrund des Umfangs wurde nur sehr grob auf das Erstellen von Indizes eingegangen. Dies wird in [7] näher beschrieben.
 
-Generell können für weiterführende Informationen die aufgelisteten Quellen verwendet werden. Im Bezug auf die Verwendung von JSON in PostgreSQL ist inbesondere die Dokumentation geeignet.
+Generell können für weiterführende Informationen die aufgelisteten Quellen verwendet werden. Im Bezug auf die Verwendung von JSON in PostgreSQL ist insbesondere die Dokumentation geeignet.
 
 # Quellen
 [1] F. Pezoa, J. L. Reutter, F. Suarez, M. Ugarte, und D. Vrgoč, „Foundations of JSON Schema“, in Proceedings of the 25th International Conference on World Wide Web, Republic and Canton of Geneva, CHE, Apr. 2016, S. 263–273. doi: 10.1145/2872427.2883029.<br>

@@ -1,4 +1,4 @@
-Nun werden zwei Einträge eingefügt: Einen **Teig** und eine **Soße**.
+Nun werden zwei Einträge eingefügt: Ein **Teig** und eine **Soße**.
 
 Beide enthalten in der *infos* Spalte weitere Daten im *jsonb* Format, die den Eintrag flexibel um weitere Informationen erweitert.
 ```
@@ -69,7 +69,7 @@ INSERT INTO Rezepte VALUES (2, 'Soße', 7.80, '{
 ## Einfügen weiterer Informationen
 Aufgrund des schemalosen Prinzips können in der *infos*-Spalte nun problemlos weitere Informationen zu den Rezepten hinzugefügt werden, wie beispielsweise Rückmeldungen der Kunden oder ähnliches:
 ```
-update rezepte 
+update Rezepte 
 set infos = jsonb_insert(infos, '{kommentare, 0}', '"sehr lecker"')
 where id=1;
 ```{{execute T1}}

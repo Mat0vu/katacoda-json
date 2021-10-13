@@ -1,8 +1,8 @@
 {
   "title": "JSON in PostgreSQL",
   "description": "Möglichkeiten zur Nutzung von JSON in relationalen DBs am Beispiel von PostgreSQL",
-  "difficulty": "Beginner",
-  "time": "15",
+  "difficulty": "Anfänger",
+  "time": "15 Minuten",
   "details": {
     "steps": [
       {
@@ -26,7 +26,7 @@
         "text": "step5.md"
       },
       {
-        "title": "Veröffentlichen von Daten",
+        "title": "Weitere hilfreiche Informationen",
         "text": "step6.md"
       }
     ],
