@@ -9,19 +9,19 @@ In der folgenden Tabelle werden die wichtigsten Operatoren, die von PostgreSQL z
 | #>>| int, string |  Zugriff über Angabe des Pfades, bestehend aus Elementnamen und Array-Indizes| string| nein|
 
 # Abfragen
-Mithilfe der Operatoren lässt sich nun beispielsweise der *kommentare*-Array ausgeben.
-```
-SELECT infos->'zutaten' as zutaten 
-FROM Rezepte WHERE id=1;
-```{{execute T1}}
-
-Außerdem können die Zutaten aller Rezepte ausgeben werden.
+Mithilfe der Operatoren lässt sich nun beispielsweise der *kommentare*-Array ausgeben:
 ```
 SELECT name, infos->'kommentare' as kommentare 
 FROM Rezepte;
 ```{{execute T1}}
 
-Mit diesem Befehl kann für alle Rezepte die Hauptzutat ausgelesen werden, also das 1. Element im Array der *zutaten*.
+Außerdem können die Zutaten aller Rezepte ausgeben werden:
+```
+SELECT infos->'zutaten' as zutaten 
+FROM Rezepte WHERE id=1;
+```{{execute T1}}
+
+Mit folgendem Befehl kann für alle Rezepte die Hauptzutat ausgelesen werden, also das 1. Element im Array der *zutaten*:
 ```
 SELECT name, infos->'zutaten'->0 as hauptzutat
 FROM Rezepte;
@@ -34,7 +34,7 @@ FROM Rezepte;
 ```{{execute T1}}
 
 Mit dem `@>` Operator kann überprüft werden, ob ein Element enthalten ist.
-Mit dieser Abfrage werden alle Rezepte angezeigt, die Eier enthalten.
+Mit dieser Abfrage werden alle Rezepte angezeigt, die Eier enthalten:
 ```
 SELECT id, name 
 FROM Rezepte WHERE infos @> '{"zutaten": [{"eier":{}}]}';
