@@ -17,11 +17,11 @@ An einem Beispiel soll die Struktur eines JSON-Objekts erklärt werden.
 *mitarbeiter* ist ein Objekt. *vorname* und *nachname* sind beides Eigenschaften, die wiederum immer aus Schlüsseln (Keys) und einem zugehörigen  Wert (Value) bestehen. <br>
 *qualifikationen* ist ein Array, in dem mehrere Werte, oder auch wieder verschachtelte Objekte abgelegt werden können [1].
 
-
+  
 # Nutzen
 Warum möchte man Daten in relationalen Datenbanken überhaupt im JSON-Format speichern?
 
-In relationalen Datenbankmanagementsystemen muss vor der Speicherung von Daten das Datenbankschema vorgegeben werden. Damit wird festgelegt, wie viele Spalten in den Tabellen zur Verfügung stehen sollen und welche Datentypen darin gespeichert werden.
+In klassischen relationalen Datenbankmanagementsystemen muss vor der Speicherung von Daten das Datenbankschema vorgegeben werden. Damit wird festgelegt, wie viele Spalten in den Tabellen zur Verfügung stehen sollen und welche Datentypen darin gespeichert werden.
 Dieses traditionelle Konzept der relationen DBMS, das in den letzten 25 Jahren sehr weit verbreitet war, ist heutzutage nicht mehr für alle Anforderungen sinnvoll, weshalb immer mehr andere DBMS eingesetzt werden [2].
 
 Dokumentenorientierte Datenbankmanagementsysteme unterstützen als beispielhafte Vertreter der No-SQL-Datenbanken JSON nativ und profitieren von der flexiblen Speicherung von Daten. Hier spricht man auch von *Schema-on-read*, das die Speicherung von Daten ermöglicht, ohne vorher ein Schema festgelegt zu haben. 

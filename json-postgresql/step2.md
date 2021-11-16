@@ -7,8 +7,7 @@ Wenn ein JSON-Objekt denselben Schlüssel mehr als einmal enthält, werden alle 
 
 
 ## JSONB
-*jsonb* Daten werden binär abgespeichert und beinhalten somit weder die Leerzeichen noch die Ordnung von Schlüsseln, noch ob es Duplikate derselben gibt. If duplicate keys are specified in the input, only the last value is kept. 
-Während der Import die Konvertierung etwas verlangsamt, wird die Verarbeitung der Daten beschleunigt, da im Gegensatz zu *json* kein wiederholtes Parsen notwendig ist. Dadurch wird die Speicherung ebenfalls effizienter. *jsonb* unterstützt ebenfalls das Anlegen eines Indexes [6].
+*jsonb* Daten werden binär abgespeichert und beinhalten somit weder die Leerzeichen noch die Ordnung von Schlüsseln, noch ob es Duplikate derselben gibt. Während der Import durch die Konvertierung etwas verlangsamt wird, wird die Verarbeitung der Daten beschleunigt, da im Gegensatz zu *json* kein wiederholtes Parsen notwendig ist. Dadurch wird die Speicherung ebenfalls effizienter. *jsonb* unterstützt ebenfalls das Anlegen eines Indexes [6].
 
 ## Fazit
 Im Normalfall ist die Verwendung von *jsonb* zu empfehlen [6].

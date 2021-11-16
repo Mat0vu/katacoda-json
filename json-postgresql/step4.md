@@ -73,3 +73,4 @@ update Rezepte
 set infos = jsonb_insert(infos, '{kommentare, 0}', '"sehr lecker"')
 where id=1;
 ```{{execute T1}}
+Dieser Befehl bedeutet, dass in der Spalte Infos nach dem Key *kommentare* gesucht wird und an der Index-Position 0, also ganz  vorne der Kommentar *"sehr lecker"* hinzugefügt wird.

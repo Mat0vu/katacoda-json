@@ -18,7 +18,7 @@ FROM Rezepte;
 Außerdem können die Zutaten aller Rezepte ausgeben werden:
 ```
 SELECT infos->'zutaten' as zutaten 
-FROM Rezepte WHERE id=1;
+FROM Rezepte;
 ```{{execute T1}}
 
 Mit folgendem Befehl kann für alle Rezepte die Hauptzutat ausgelesen werden, also das 1. Element im Array der *zutaten*:
@@ -27,7 +27,7 @@ SELECT name, infos->'zutaten'->0 as hauptzutat
 FROM Rezepte;
 ```{{execute T1}}
 
-Folgende Abfrage benutzt einen anderen Operator, hat aber den selben Effekt. Mit diesem Operator kann der *Pfad* direkt angegeben werden:
+Folgende Abfrage benutzt einen anderen Operator, hat aber den selben Effekt. Mit diesem Operator kann der *Pfad* innerhalb des JSON-Objekts direkt angegeben werden:
 ```
 SELECT name, infos#>'{zutaten,0}' as hauptzutat
 FROM Rezepte;
@@ -39,3 +39,5 @@ Mit dieser Abfrage werden alle Rezepte angezeigt, die Eier enthalten:
 SELECT id, name 
 FROM Rezepte WHERE infos @> '{"zutaten": [{"eier":{}}]}';
 ```{{execute T1}}
+
+Anhand dieser Abfragen können auch eigene Abfragen selbst formuliert und in der Konsole getestet werden.
