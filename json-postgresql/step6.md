@@ -30,3 +30,9 @@ PostgreSQL ermöglicht ebenfalls das Veröffentlichen relationaler Daten im JSON
 \copy (SELECT row_to_json(row(id,name,infos)) FROM Rezepte) TO '/home/json_export';
 ```{{execute T1}}
 Dieser Befehl exportiert das JSON als Textdatei an den gewünschten Pfad.
+
+Die Datei kann so betrachtet werden:
+```
+exit
+cat /home/json_export
+```{{execute T1}}
