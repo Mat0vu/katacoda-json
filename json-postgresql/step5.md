@@ -9,7 +9,7 @@ In der folgenden Tabelle werden die wichtigsten Operatoren, die von PostgreSQL z
 | #>>| int, string |  Zugriff über Angabe des Pfades, bestehend aus Elementnamen und Array-Indizes| string| nein|
 
 # Abfragen
-Mithilfe der Operatoren lässt sich nun beispielsweise der *kommentare*-Array ausgeben:
+Mithilfe der Operatoren lässt sich nun beispielsweise das *kommentare*-Array ausgeben:
 ```
 SELECT name, infos->'kommentare' as kommentare 
 FROM Rezepte;
@@ -17,7 +17,7 @@ FROM Rezepte;
 
 Außerdem können die Zutaten aller Rezepte ausgeben werden:
 ```
-SELECT infos->'zutaten' as zutaten 
+SELECT name, infos->'zutaten' as zutaten 
 FROM Rezepte;
 ```{{execute T1}}
 
